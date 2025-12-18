@@ -1,8 +1,28 @@
-module.exports = function(eleventyConfig) {
-  // Copy les images directement vers le dossier de sortie
-  eleventyConfig.addPassthroughCopy("public");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const { format } = require("@11ty/eleventy-img/src/adapters/sharp");
 
-  eleventyConfig.addFilter("date", function(dateObj, format = "dd/MM/yyyy") {
+module.exports = async function (eleventyConfig) {
+  // Copy paths to target site
+  eleventyConfig.addPassthroughCopy({ "./public/": "/" });
+
+  // Plugins 
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["avif", "webp"],
+
+    widths: [800, 600, 1000],
+
+    failOnError: true,
+    htmlOptions: {
+      imgAttributes: {
+        // e.g. <img loading decoding> assigned on the HTML tag will override these values.
+        loading: "lazy",
+        decoding: "async",
+      }
+    },
+  });
+
+  // Filters
+  eleventyConfig.addFilter("date", function (dateObj, format = "dd/MM/yyyy") {
     const date = dateObj instanceof Date ? dateObj : new Date(dateObj);
     if (Number.isNaN(date.getTime())) {
       return "";
@@ -18,11 +38,28 @@ module.exports = function(eleventyConfig) {
     return format.replace(/yyyy|yy|MM|dd/g, (token) => tokens[token] || token);
   });
 
-  eleventyConfig.addCollection("blog", function(collection) {
-    return collection.getFilteredByGlob("src/blog/*.md");
+  eleventyConfig.addFilter("isoDate", function (dateObj) {
+    const date = dateObj instanceof Date ? dateObj : new Date(dateObj);
+    return Number.isNaN(date.getTime()) ? "" : date.toISOString();
   });
 
-  // Retourne la config
+  eleventyConfig.addFilter("limit", function (collection, amount = 3) {
+    if (!Array.isArray(collection)) {
+      return [];
+    }
+    return collection.slice(0, amount);
+  });
+
+  // Shortcodes
+  eleventyConfig.addShortcode("figure", function (src, alt, caption) {
+    return `
+    <figure class="image">
+      <img src="${src}" alt="${alt}" loading="lazy">
+      <figcaption>${caption}</figcaption>
+    </figure>
+  `;
+  });
+
   return {
     dir: {
       input: "src",
@@ -33,4 +70,4 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk"
   };
 };
-  
+
