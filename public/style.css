@@ -11,16 +11,28 @@ body {
   width: 300px;
   padding: 2rem 2rem 2rem 6rem;
   top: 2rem;
-  text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: left;
+  font-family: "Courier New", monospace;
   font-size: larger;
+}
+
+.sidebar a {
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.sidebar nav ul a:hover{
+  background-color: gold;
+}
+
+.sidebar .nav-links {
+  padding-left: 5rem;
 }
 
 .content {
@@ -30,3 +42,12 @@ nav ul {
   margin-left: 1rem;
   margin-top: 4rem;
 }
+
+article {
+  margin-bottom: 4rem;
+}
+
+figure {
+  margin-bottom: 3rem;
+}
+
