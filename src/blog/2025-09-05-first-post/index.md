@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: "Première nouvelle"
+title: "Newsletter #1"
 date: 2025-09-05
 tags: newsletter
 ---
@@ -22,19 +22,29 @@ Niveau planning les prochaines sessions seront la peinture des œuvres mortes en
 Une fois rénové nous aimerions naviguer bien sûr mais aussi pouvoir faire profiter le bateau à des associations ou projets auquel il pourrait être utile. L'idée est encore en réflexion mais si vous connaissez des personnes portant des projets, par exemple d'accès à la voile / réinsertion à la recherche d'un bateau, n’hésitez pas à nous en parler! 
 
 La bise !!!! 
+
 Raph
 
-<!-- <img src="/content/blog/post1/000052650011.jpg" alt="l'équipe"> -->
+{% figure 
+  "/blog/2025-09-05-first-post/groupe-au-taf.jpg",
+  "Travaux sur la coque du bateau",
+  "L'equipe en action — juin 2025"
+%}
 
-<img src="/blog/first-post/groupe-au-taf.jpg" alt="blabla" width=600>
+{% figure 
+  "/blog/2025-09-05-first-post/quille.jpg",
+  "quille décapée",
+  "La quille décapée vs originale — aout 2025"
+%}
 
-Champagne au toilettage
-<!--    
-![]("/content/blog/first-post/quille.jpg")
-la quille décapée vs originale 
+{% figure 
+  "/blog/2025-09-05-first-post/chapi.jpg",
+  "Chapi",
+  "Chapi le chien du chantier"
+%}
 
-![]("/content/blog/first-post/chapi.jpg")
-Chapi, la star du chantier 
-
-![]("/content/blog/first-post/osmose.jpg")
-Des bulles d’osmose percée, un peu le chtar des bateaux -->
+{% figure 
+  "/blog/2025-09-05-first-post/osmose.jpg",
+  "quille décapée",
+  "Exemple de chtar d'osmose"
+%}
