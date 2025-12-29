@@ -9,7 +9,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["avif", "webp"],
 
-    widths: [800, 600, 1000],
+    widths: [600],
 
     failOnError: true,
     htmlOptions: {

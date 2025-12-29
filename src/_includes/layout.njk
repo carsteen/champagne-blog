@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <div class="site-layout">
-      <aside class="site-sidebar" aria-label="Navigation principale">
-        <div class="site-logo">
-          <a href="/">
+    <div class="layout">
+      <aside class="sidebar" aria-label="Navigation principale">
+        <nav class="site-nav">
+          <a href="/" class="logo">
             <img src="/img/logo_champagne.png" alt="Champagne" eleventy:ignore width="300">
           </a>
-        </div>
-        <nav class="site-nav">
-          <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/about/">Le projet</a></li>
-            <li><a href="/posts_list/">Tous les posts</a></li>
+          <ul class="nav-links">
+            <li>
+              <a href="/">Blog</a>            </li>
+            <li>
+              <a href="/about/">Le projet</a>
+            </li>
+            <li>
+              <a href="/posts_list/">Tous les posts</a>            </li>
           </ul>
         </nav>
       </aside>
       <main class="site-main">
-        <div class="page-content">
+        <div class="content">
           {{ content | safe }}
         </div>
         {% include "footer.njk" %}

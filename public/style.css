@@ -1,22 +1,32 @@
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header nav a {
-  margin: 0 0.5rem;
-  text-decoration: none;
+.layout {
+  display: flex;
+  min-height: 100vh;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+.sidebar {
+  width: 300px;
+  padding: 2rem 2rem 2rem 6rem;
+  top: 2rem;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: larger;
+  text-transform: capitalize;
 }
 
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
 }
