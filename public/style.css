@@ -27,7 +27,7 @@ nav ul {
   margin: 0;
 }
 
-.sidebar nav ul a:hover{
+.sidebar nav ul a:hover {
   background-color: gold;
 }
 
@@ -45,9 +45,17 @@ nav ul {
 
 article {
   margin-bottom: 4rem;
+  font-size: 1.05rem;
 }
 
 figure {
   margin-bottom: 3rem;
 }
 
+header a {
+  text-decoration: none;
+}
+
+.articles-list {
+  font-size: large;
+}

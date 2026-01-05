@@ -1,10 +1,11 @@
 ---
 layout: layout.njk
 title: Blog
+numberOfLatestPostsToShow: 3
 ---
 
 <section class="articles-feed" aria-labelledby="news-title">
-  {% set latestPosts = collections.posts | reverse | limit(3) %}
+  {% set latestPosts = collections.posts | reverse | limit(numberOfLatestPostsToShow) %}
   <div class="articles-stack">
     {% for post in latestPosts %}
       <article class="article-card">
@@ -13,7 +14,7 @@ title: Blog
             <a href="{{ post.url }}">{{ post.data.title }}</a>
           </h2>
           <p class="article-date">
-            <time datetime="{{ post.date | isoDate }}">{{ post.date | date("dd/MM/yyyy") }}</time>
+            <time datetime="{{ post.date | isoDate }}">{{ post.date | parseDate | readableDate }}</time>
           </p>
         </header>
         <div class="article-body">

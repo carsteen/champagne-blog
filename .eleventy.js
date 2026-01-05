@@ -50,6 +50,37 @@ module.exports = async function (eleventyConfig) {
     return collection.slice(0, amount);
   });
 
+  eleventyConfig.addFilter(
+    "parseDate",
+    /**
+     * Parses a date string into a Date object.
+     * @param {string} dateString - The date string to parse
+     * @returns {Date} The parsed Date object
+     */
+    function (dateString) {
+      console.log(dateString)
+      return new Date(dateString)
+    }
+  )
+
+  eleventyConfig.addFilter(
+    "readableDate",
+    /**
+     * @param {Date} dateObj
+     */
+    function (dateObj) {
+      const date = new Date(dateObj)
+      const options = {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "UTC"
+      }
+      console.log(date)
+      return date.toLocaleDateString("FR", options)
+    }
+  )
+
   // Shortcodes
   eleventyConfig.addShortcode("figure", function (src, alt, caption) {
     return `
