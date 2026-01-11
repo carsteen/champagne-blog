@@ -7,10 +7,12 @@ permalink: /posts_list/
 <section class="articles-list" aria-labelledby="articles-title">
   <ul>
     {% for post in collections.posts | reverse %}
-    <li>
-      <a class="post-list-title" href="{{ post.url }}">{{ post.data.title }}</a>
-      <time datetime="{{ post.date | isoDate }}">{{ post.date | parseDate | readableDate }}</time>
-    </li>
+      <li>
+        <div>
+          <a class="post-list-title" href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
+        <time class="post-list-time" datetime="{{ post.date | isoDate }}">{{ post.date | parseDate | readableDate }}</time>
+      </li>
     {% endfor %}
   </ul>
 </section>

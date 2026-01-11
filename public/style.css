@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -7,6 +8,42 @@ body {
   min-height: 100vh;
 }
 
+.content {
+  flex: 1;
+  min-width: 600px;
+  max-width: 600px;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+
+article {
+  margin-bottom: 4rem;
+  font-size: 1.05rem;
+}
+
+figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: #3d00c2
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.article-date {
+  color: #575757;
+}
+
+/* SIDEBAR */
 .sidebar {
   width: 300px;
   padding: 2rem 2rem 2rem 6rem;
@@ -35,27 +72,73 @@ nav ul {
   padding-left: 5rem;
 }
 
-.content {
-  flex: 1;
-  max-width: 600px;
-  padding: 2rem;
-  margin-left: 1rem;
-  margin-top: 4rem;
+
+/* POST LIST */
+
+.articles-list ul {
+  font-size: large;
+  list-style: none;
 }
 
-article {
-  margin-bottom: 4rem;
-  font-size: 1.05rem;
-}
-
-figure {
-  margin-bottom: 3rem;
-}
-
-header a {
+.articles-list ul a {
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
-.articles-list {
-  font-size: large;
+.articles-list li {
+  padding: 0.8rem;
 }
+
+.post-list-time {
+  color: #717171;
+}
+
+.newsletter-tag {
+  /* background-color: rgb(185, 215, 255); */
+  color: #808080;
+  font-size: 1rem;
+}
+
+/* TABLES */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+/* FIRST LETTER */
+.index-page p::first-letter {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+

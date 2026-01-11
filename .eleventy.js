@@ -1,4 +1,5 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const { HtmlBasePlugin } = require("@11ty/eleventy");
 const { format } = require("@11ty/eleventy-img/src/adapters/sharp");
 
 module.exports = async function (eleventyConfig) {
@@ -6,10 +7,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./public/": "/" });
 
   // Plugins 
+  eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["avif", "webp"],
+    formats: ["webp"],
 
-    widths: [600],
+    widths: [500],
 
     failOnError: true,
     htmlOptions: {
@@ -58,7 +60,6 @@ module.exports = async function (eleventyConfig) {
      * @returns {Date} The parsed Date object
      */
     function (dateString) {
-      console.log(dateString)
       return new Date(dateString)
     }
   )
@@ -76,7 +77,6 @@ module.exports = async function (eleventyConfig) {
         day: "numeric",
         timeZone: "UTC"
       }
-      console.log(date)
       return date.toLocaleDateString("FR", options)
     }
   )
@@ -97,6 +97,7 @@ module.exports = async function (eleventyConfig) {
       includes: "_includes",
       output: "_site"
     },
+    pathPrefix: "/keksteen/champagne/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };

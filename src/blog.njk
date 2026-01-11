@@ -13,9 +13,9 @@ numberOfLatestPostsToShow: 3
           <h2 class="article-title">
             <a href="{{ post.url }}">{{ post.data.title }}</a>
           </h2>
-          <p class="article-date">
+          <div class="article-date">
             <time datetime="{{ post.date | isoDate }}">{{ post.date | parseDate | readableDate }}</time>
-          </p>
+          </div>
         </header>
         <div class="article-body">
           {{ post.templateContent | safe }}
