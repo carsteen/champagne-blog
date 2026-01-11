@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: post.njk
 title: "Newsletter #1"
 date: 2025-09-05
 tags: newsletter
