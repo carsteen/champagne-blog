@@ -12,7 +12,7 @@ Champagne !!! Je vois mal un autre titre 🍾✨
 La peinture est terminée, c'est l'heure du reveal pour notre Champagne ! On est vraiment content du résultat, on se dit que c'est en partie le talent, en partie la chance du débutant. Et en partie faut pas regarder de trop près non plus. Le tout sublimé par ce magnifique logo dessiné et peint par Clément. Vraiment est ce bien notre Champagne ce bateau ? 
 
 {% figure 
-  "/blog/2025-11-06-champagne/champagne_magnifique.jpg",
+  "/blog/2025-11-06-champagne/champagne_magnifique.webp",
   "Bateau champagne fin de rénovation sur bers",
   "Peinture et antifouling terminés 🥹 — Octobre 2025"
 %}
@@ -21,7 +21,7 @@ La peinture est terminée, c'est l'heure du reveal pour notre Champagne ! On est
 La dernière fois, j'écrivais sur le choix de la couleur, on en a fait des choses depuis ! A commencer par la peinture elle-même. L'enjeu était d'attendre les bonnes conditions météo pour peindre un jour de temps sec. Le bon jour est arrivé et j'ai peint aidé d'une équipe sur le thème de la transmission avec Jean Pierre et Christine, les anciens propriétaires du bateau. 
 
 {% figure 
-  "/blog/2025-11-06-champagne/jp.jpg",
+  "/blog/2025-11-06-champagne/jp.webp",
   "Bateau et échafaudage",
   "JP l'experience au pinceau, peinture bleu noir — Octobre 2025"
 %}
@@ -30,7 +30,7 @@ La dernière fois, j'écrivais sur le choix de la couleur, on en a fait des chos
 Ensuite rebouchage des trous d'osmose qui séchaient depuis juin. Étape dans laquelle Zoé nous a filé un gros coup de main, elle qui était sur le tarmac du chantier comme dans son jardin. Pour reboucher ces trous nous avons découpé les petits morceaux de tissu de verre de la bonne taille et les avons enduit de résine et collés dans le bon timing. Ponçage, puis mastic époxy pour assurer l'étanchéité et la forme puis re ponçage puis re mastic etc. Un jeu de patience et de timing. 🕑🕝🕒
 
 {% figure 
-  "/blog/2025-11-06-champagne/clem_zoe.jpg",
+  "/blog/2025-11-06-champagne/clem_zoe.webp",
   "Bateau et échafaudage",
   "Clement et Zoe: rebouchage trous osmose — Octobre 2025"
 %}
@@ -40,13 +40,13 @@ Parti pour parti sur la fibre de verre nous avons aussi rénové l'aileron de sa
 
 
 {% figure 
-  "/blog/2025-11-06-champagne/strat.jpg",
+  "/blog/2025-11-06-champagne/strat.webp",
   "Stratification de l'aileron",
   "Gabarits de découpe pour les pieces de fibres de verre scotchés à la coque pour s'assurer des formes choisies"
 %}
 
 {% figure 
-  "/blog/2025-11-06-champagne/clem_peintre.jpg",
+  "/blog/2025-11-06-champagne/clem_peintre.webp",
   "Stratification de l'aileron",
   "Peinture du logo par Clement, étape pleine d'émotion"
 %}
@@ -56,7 +56,7 @@ En dernière minute nous avons aussi rebouché un trou de passe coque (!). C'est
 Nous avons été forcés de décaler la date de remise à l'eau d'une semaine, à cause d'une météo capricieuse et d'un leger excès d'optimisme! Les derniers jours ont été occupés par le changement des passes-coques et la peinture des antifouling. Là c'est Christine ma maman qui a bien aidé en étant là quand je me retrouvais sans mon cher acolyte.
 
 {% figure 
-  "/blog/2025-11-06-champagne/christine.jpg",
+  "/blog/2025-11-06-champagne/christine.webp",
   "Stratification de l'aileron",
   "Christine remonte les filières"
 %}

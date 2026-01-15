@@ -32,9 +32,11 @@ async function findJpgFiles(dir, results) {
 async function convertToWebp(filePath) {
   const outputPath = filePath.replace(/\.(jpe?g)$/i, ".webp");
   try {
-    await fs.access(outputPath);
-    console.log(`Skipped (already exists): ${outputPath}`);
-    return;
+    const stats = await fs.stat(outputPath);
+    if (stats.size > 0) {
+      console.log(`Skipped (already exists): ${outputPath}`);
+      return;
+    }
   } catch {
     // File doesn't exist, proceed with conversion.
   }

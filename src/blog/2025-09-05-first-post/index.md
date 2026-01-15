@@ -26,25 +26,25 @@ La bise !!!!
 Raph
 
 {% figure 
-  "/blog/2025-09-05-first-post/groupe-au-taf.jpg",
+  "/blog/2025-09-05-first-post/groupe-au-taf.webp",
   "Travaux sur la coque du bateau",
   "L'equipe en action — juin 2025"
 %}
 
 {% figure 
-  "/blog/2025-09-05-first-post/quille.jpg",
+  "/blog/2025-09-05-first-post/quille.webp",
   "quille décapée",
   "La quille décapée vs originale — aout 2025"
 %}
 
 {% figure 
-  "/blog/2025-09-05-first-post/chapi.jpg",
+  "/blog/2025-09-05-first-post/chapi.webp",
   "Chapi",
   "Chapi le chien du chantier"
 %}
 
 {% figure 
-  "/blog/2025-09-05-first-post/osmose.jpg",
+  "/blog/2025-09-05-first-post/osmose.webp",
   "quille décapée",
   "Exemple de chtar d'osmose"
 %}
