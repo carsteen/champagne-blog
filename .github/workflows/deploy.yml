@@ -33,6 +33,6 @@ jobs:
 
       - name: Deploy via rsync (rrsync)
         run: |
-          rsync -avz --delete \
+          rsync -avz --delete --progress --stats \
             _site/ \
-            keksteen@club1.fr
+            keksteen@club1.fr:
