@@ -26,7 +26,7 @@ Le livre This Old Boat de Don Casey est devenu notre bible. Ce livre détaille t
   "This Old Boat - Don Casey"
 %}
 
-Une fois la quille traitée, nous nous sommes lancés sur l’excitant chantier peinture. Nous avons accueilli Lucie qui a clairement mérité ses tranches de Ker Cadélac sur de nombreuses heures de ponçage. Poncage pour préparer la surface, mastic pour combler les trous et imperfections. Ces deux étapes en boucle pour essayer d’avoir la surface la plus lisse possible. 
+Une fois la quille traitée, nous nous sommes lancés sur l’excitant chantier peinture. Nous avons accueilli Lucie qui a clairement mérité ses tranches de Ker Cadélac sur de nombreuses heures de ponçage. Poncage pour préparer la surface, mastic pour combler les trous et imperfections. Ces deux étapes en boucle pour essayer d’avoir une surface la plus lisse possible. 
 
 {% figure 
   "/blog/2025-10-07-peinture-couture/clemsy_lucie_bateau.webp",
@@ -34,7 +34,7 @@ Une fois la quille traitée, nous nous sommes lancés sur l’excitant chantier 
   "Clement et Lucie dans champagne"
 %}
 
-La peinture … Science étonante et sensible source de nombreux questionnements. Mystères, et pièges dans lesquels nous n’avons pas manqué de tomber ! Sans entrer dans les détails, j’ai appris le mot “diluant” que j'ai depuis ajouté à mon vocabulaire. Et je me souviendrai que chaque peinture a son diluant bien spécifique et que le vendeur est là pour répondre aux questions qu’on aurait à lui poser… Plus rérieusement, j'écrirai quand je pourrai sur les criteres de réussite d'une peinture et les différents parametres à prendre en compte.
+La peinture … Science étonante et sensible source de nombreux questionnements. Mystères, et pièges dans lesquels nous n’avons pas manqué de tomber ! Sans entrer dans les détails, j’ai appris le mot “diluant” que j'ai depuis ajouté à mon vocabulaire. Et je me souviendrai que chaque peinture a son diluant bien spécifique et que le vendeur est là pour répondre aux questions qu’on aurait à lui poser… Plus rérieusement, j'aimerais écrire avec plus de temps sur les criteres de réussite d'une peinture et les différents parametres à prendre en compte.
 
 {% figure 
   "/blog/2025-10-07-peinture-couture/clemsy_lucie.webp",
@@ -42,7 +42,7 @@ La peinture … Science étonante et sensible source de nombreux questionnements
   "Préparation de la premiere couche de peinture"
 %}
 
-Nous avons aussi avancé sur les boiseries qui sont superbes. Magnifiées par un ponçage puis un savant mélange secret huile de lin, essence de térébenthine et chuuut (Sicatif). De ce qu'on a compris ce n'est pas un vernis mais plutot un mélange d'huile:  le lin nourit amélioré par l'essence de thérébentine (qui joue le role de solvant c'est à dire dillue l'huile de lin et lui permet de penetrer d'avantage) et le siccatif (qui accélere le sechage). 
+Nous avons aussi avancé sur les boiseries qui sont superbes. Magnifiées par un ponçage puis un savant mélange secret huile de lin, essence de térébenthine et chuuut (Sicatif). De ce qu'on a compris ce n'est pas un vernis mais plutot un mélange d'huile:  le lin nourit amélioré par l'essence de thérébentine (qui joue le role de solvant c'est à dire dillue l'huile de lin et lui permet de penetrer d'avantage) et le siccatif accélere le séchage. 
 
 {% figure 
   "/blog/2025-10-07-peinture-couture/lucie_huiledelin.webp",
