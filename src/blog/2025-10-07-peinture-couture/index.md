@@ -5,7 +5,7 @@ date: 2025-10-07
 tags: newsletter
 ---
 
-Hello all ! TEST
+Hello all ! 
 
 Quelques nouvelles du chantier. Il s’est passé beaucoup de choses. Déjà nous avons choisi la prochaine couleur de champagne. Ce sera bleu noir. Qui surprise, se situe entre bleu et.. noir. Plus proche de noir quand meme. Notre champagne va boxer dans la catégorie des darkos. 
 
