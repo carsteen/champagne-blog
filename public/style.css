@@ -10,11 +10,12 @@ body {
 
 .content {
   flex: 1;
-  min-width: 600px;
-  max-width: 600px;
+  width: 600px;
+  max-width: 100%;
   padding: 2rem;
   margin-left: 1rem;
   margin-top: 4rem;
+  box-sizing: border-box;
 }
 
 article {
@@ -140,5 +141,43 @@ tbody>tr:nth-of-type(even) {
   font-weight: bold;
   font-style: italic;
   color: rgb(0, 0, 0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .sidebar .logo img {
+    width: 200px;
+  }
+
+  .sidebar .nav-links {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+  }
+
+  .content {
+    width: auto;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .content img,
+  .content picture img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
