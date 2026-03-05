@@ -50,7 +50,8 @@ h2 {
   padding: 2rem 2rem 2rem 6rem;
   top: 2rem;
   text-align: left;
-  font-family: "Courier New", monospace;
+  font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Consolas", monospace;
+  font-weight: normal;
   font-size: larger;
 }
 
@@ -63,6 +64,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 0.2rem;
 }
 
 .sidebar nav ul a:hover {
@@ -164,7 +169,7 @@ tbody>tr:nth-of-type(even) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem 1rem;
+    gap: 0.5rem 2.5rem;
   }
 
   .content {
