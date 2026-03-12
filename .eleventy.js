@@ -1,13 +1,10 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const { HtmlBasePlugin } = require("@11ty/eleventy");
-const { format } = require("@11ty/eleventy-img/src/adapters/sharp");
 
 module.exports = async function (eleventyConfig) {
   // Copy paths to target site
   eleventyConfig.addPassthroughCopy({ "./public/": "/" });
 
-  // Plugins 
-  eleventyConfig.addPlugin(HtmlBasePlugin);
+  // Plugins
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp"],
 
@@ -106,7 +103,6 @@ module.exports = async function (eleventyConfig) {
       includes: "_includes",
       output: "_site"
     },
-    pathPrefix: "/keksteen/champagne/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
