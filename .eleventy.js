@@ -11,7 +11,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp"],
 
-    widths: [500],
+    widths: [300, 600, 800, 1200],
 
     failOnError: true,
     htmlOptions: {
