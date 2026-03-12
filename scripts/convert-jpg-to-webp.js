@@ -2,7 +2,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const sharp = require("sharp");
 
-const IMAGE_EXTS = new Set([".jpg", ".jpeg"]);
+const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".png"]);
 const SKIP_DIRS = new Set([".git", "node_modules", "_site"]);
 
 async function findJpgFiles(dir, results) {
@@ -30,7 +30,7 @@ async function findJpgFiles(dir, results) {
 }
 
 async function convertToWebp(filePath) {
-  const outputPath = filePath.replace(/\.(jpe?g)$/i, ".webp");
+  const outputPath = filePath.replace(/\.(jpe?g|png)$/i, ".webp");
   try {
     const stats = await fs.stat(outputPath);
     if (stats.size > 0) {
@@ -40,7 +40,7 @@ async function convertToWebp(filePath) {
   } catch {
     // File doesn't exist, proceed with conversion.
   }
-  await sharp(filePath).webp().toFile(outputPath);
+  await sharp(filePath).webp({ quality: 90 }).toFile(outputPath);
   console.log(`Converted: ${filePath} -> ${outputPath}`);
 }
 

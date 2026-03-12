@@ -17,9 +17,10 @@ numberOfLatestPostsToShow: 3
             <time datetime="{{ post.date | isoDate }}">{{ post.date | parseDate | readableDate }}</time>
           </div>
         </header>
-        <div class="article-body">
-          {{ post.templateContent | safe }}
-        </div>
+        <p class="article-excerpt">
+          {{ post.templateContent | excerpt }}
+        </p>
+        <a href="{{ post.url }}">Lire la suite →</a>
       </article>
     {% endfor %}
   </div>

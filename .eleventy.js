@@ -1,17 +1,14 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const { HtmlBasePlugin } = require("@11ty/eleventy");
-const { format } = require("@11ty/eleventy-img/src/adapters/sharp");
 
 module.exports = async function (eleventyConfig) {
   // Copy paths to target site
   eleventyConfig.addPassthroughCopy({ "./public/": "/" });
 
-  // Plugins 
-  eleventyConfig.addPlugin(HtmlBasePlugin);
+  // Plugins
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp"],
 
-    widths: [500],
+    widths: [300, 600, 800, 1200],
 
     failOnError: true,
     htmlOptions: {
@@ -43,6 +40,13 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("isoDate", function (dateObj) {
     const date = dateObj instanceof Date ? dateObj : new Date(dateObj);
     return Number.isNaN(date.getTime()) ? "" : date.toISOString();
+  });
+
+  eleventyConfig.addFilter("excerpt", function (content, maxLength = 200) {
+    if (!content) return "";
+    const plain = content.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    if (plain.length <= maxLength) return plain;
+    return plain.slice(0, maxLength).replace(/\s\S*$/, "") + "…";
   });
 
   eleventyConfig.addFilter("limit", function (collection, amount = 3) {
@@ -82,10 +86,12 @@ module.exports = async function (eleventyConfig) {
   )
 
   // Shortcodes
-  eleventyConfig.addShortcode("figure", function (src, alt, caption) {
+  eleventyConfig.addShortcode("figure", function (src, alt, caption, width) {
+    const widthAttr = width ? ` eleventy:widths="${width}"` : '';
+    const style = width ? ` style="max-width:${width}px"` : '';
     return `
-    <figure class="image">
-      <img src="${src}" alt="${alt}" loading="lazy">
+    <figure class="image"${style}>
+      <img src="${src}" alt="${alt}" loading="lazy"${widthAttr}>
       <figcaption>${caption}</figcaption>
     </figure>
   `;
@@ -97,7 +103,6 @@ module.exports = async function (eleventyConfig) {
       includes: "_includes",
       output: "_site"
     },
-    pathPrefix: "/keksteen/champagne/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };

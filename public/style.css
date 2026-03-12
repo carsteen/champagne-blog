@@ -10,11 +10,11 @@ body {
 
 .content {
   flex: 1;
-  min-width: 600px;
-  max-width: 600px;
   padding: 2rem;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4rem;
+  box-sizing: border-box;
 }
 
 article {
@@ -22,17 +22,34 @@ article {
   font-size: 1.05rem;
 }
 
+.content > :not(article),
+article > :not(figure) {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figure {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: left;
+  padding: 0 5%;
 }
 
 header a {
   text-decoration: none;
-}
-
-a, a:visited {
-  color: #3d00c2
+  color: #3d00c2,
 }
 
 h2 {
@@ -49,7 +66,8 @@ h2 {
   padding: 2rem 2rem 2rem 6rem;
   top: 2rem;
   text-align: left;
-  font-family: "Courier New", monospace;
+  font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Consolas", monospace;
+  font-weight: normal;
   font-size: larger;
 }
 
@@ -62,6 +80,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 0.2rem;
 }
 
 .sidebar nav ul a:hover {
@@ -140,5 +162,43 @@ tbody>tr:nth-of-type(even) {
   font-weight: bold;
   font-style: italic;
   color: rgb(0, 0, 0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .sidebar .logo img {
+    width: 200px;
+  }
+
+  .sidebar .nav-links {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2.5rem;
+  }
+
+  .content {
+    width: auto;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .content img,
+  .content picture img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
