@@ -40,7 +40,10 @@ async function convertToWebp(filePath) {
   } catch {
     // File doesn't exist, proceed with conversion.
   }
-  await sharp(filePath).webp({ quality: 90 }).toFile(outputPath);
+  await sharp(filePath)
+    .resize({ width: 1200, withoutEnlargement: true })
+    .webp({ quality: 90 })
+    .toFile(outputPath);
   console.log(`Converted: ${filePath} -> ${outputPath}`);
 }
 
