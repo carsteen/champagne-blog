@@ -73,9 +73,10 @@ C'est pourquoi j'en profite pour lancer un petit appel à volontaire pour ce nou
 
 Le plus on sera et le plus simple ce sera pour tout le monde. Ca peut aussi être intéressant d'apprendre à faire un ponton sus les berges d'une rivière. En gros on va planter des poteaux pilotis dans la vase pour tenir le tout, et dessus faire la structure qui va tenir les plancher.
 
-La session ara lieu fin mars probablement. 
+Les dates ne sont pas completement calées, la session aura lieu entre fin mars / avril. 
 
-Voila j'en reste la. J'espere que tout le monde va bien 
+Voila j'en reste la. J'espere que tout le monde va bien. 
 
 A+++
+
 Raph
